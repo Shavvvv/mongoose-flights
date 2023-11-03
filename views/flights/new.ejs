@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<h2>Enter flight information</h2>
+	<form action="/flights" method="POST">
+
+		<label>Airline:
+			<select name="Airline" id="">
+				<option value="American">American</option>
+				<option value="Southwet">Southwet</option>
+				<option value="United">United</option>
+				<option value="Jetblue">Jetblue</option>
+				<option value="Spirit">Spirit</option>
+			</select>
+		</label><br>
+
+		<label>AIRPORT
+			<select name="Airport">
+				<option value="AUS">AUS</option>
+				<option value="DFW">DFW</option>
+				<option value="DEN">DEN</option>
+				<option value="LAX">LAX</option>
+				<option value="SAN">SAN</option>
+				<option value="JFK">JFK</option>
+				<option value="LGA">LGA</option>
+			</select>
+		</label><br>
+
+		
+
+		<label>Flight NO:
+			<input type="number" name="flightNo" min="10" max="9999">
+		</label><br>
+
+
+		<label>DEPARTURE
+			<input type="date" name="date">
+
+		</label><br>
+		
+			
+		</label><br>
+		<button type="submit">Add flight</button>
+	</form>
+
+</body>
+
+</html>

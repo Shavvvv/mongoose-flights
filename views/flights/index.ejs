@@ -1,0 +1,23 @@
+<%- include('../partials/headers') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>this is to show all flights</h1>
+
+     <%     flightsDocs.forEach(function(flight){       %>
+     <ul>
+        <li> <%= flight.airport %> <br>
+            <%= flight.flightNo %> <br>
+            <%= flight.departs %> <br>
+        </li>
+     </ul>
+
+     <% })  %>
+
+</body>
+</html>
